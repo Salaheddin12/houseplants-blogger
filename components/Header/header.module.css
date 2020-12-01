@@ -1,0 +1,40 @@
+.container {
+  min-height: 80vh;
+  padding: 4rem 0px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+}
+
+.about {
+  padding: 4rem 2rem;
+  flex: 1 1 0%;
+}
+.about > * {
+  margin: 1.5rem 0;
+}
+.image {
+  flex: 1 1 0%;
+}
+.title {
+  font-size: 3.5rem;
+  font-family: "Epilogue", sans-serif;
+}
+.description {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;  
+  }
+  .image{
+    width: 100%;
+  }
+}

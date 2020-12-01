@@ -1,0 +1,12 @@
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+.navBar:first-of-type > a {
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+}
