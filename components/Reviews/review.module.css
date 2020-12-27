@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.container > h2 {
+  font-size: 35px;
+  color: #3f3d56;
+  margin-left: 2rem;
+  display: inline-block;
+  border-bottom: 2px solid #3f3d56;
+}
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.slider .slidertrack {
+  display: flex;
+  width: calc(370px * 14);
+  animation: scroll 45s linear infinite;
+}
+
+.slidertrack :hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  width: 370px;
+  border-radius: 15px;
+  border: 2px solid #8caf1c;
+}
+
+.slide > img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

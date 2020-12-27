@@ -1,13 +1,14 @@
-import Head from 'next/head'
-import Nav from '../components/navigation'
-import Header from '../components/Header'
-import styles from '../styles/Home.module.css'
+import Nav from 'components/Navigation'
+import Header from 'components/Header'
+import Reviews from 'components/Reviews'
+import styles from 'styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
     <Nav/>
     <Header/>
+    <Reviews/>
     </div>
   )
 }
